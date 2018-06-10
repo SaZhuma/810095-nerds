@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Сабина Жумабаева](https://up.htmlacademy.ru/htmlcss/21/user/810095).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
