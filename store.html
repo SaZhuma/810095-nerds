@@ -7,8 +7,7 @@
   <body>
   	<header class="main-header">
 		<nav class="main-navigation">
-			<a href="nerds.html"><img src="img/nerds-logo.jpg" alt="nerds">
-				</a>
+			<a class="main-header-logo" href="nerds.html"><img src="img/nerds-logo.png" alt="logo-nerds"></a>
 			<ul class="site-navigation">
 				<li><a href="studio.html">Студия</a></li>
 				<li><a href="clients.html">Клиенты</a></li>
@@ -20,15 +19,49 @@
 	</header>
 			<main>
 				<h1>Магазин готовых шаблонов</h1>
-				<section class="page-settings">
-					<h2 class="visually-hidden">Настройки</h2>
-						<div class="price-scroll">
-						</div>
-							<div class="page-grid">
-							</div>
-								<div class="page-features">
-								</div>
-									<button class="show-results">Показать</button>
+					<section class="filter">
+						<h2 class="visually-hidden">Фильтр</h2>
+							<form class="filter" method="get" action="">
+								<fieldset>
+									<legend>Стоимость</legend>
+										<input type="range" name="filter-price" min="0" max="15 000">
+								</fieldset>
+								<fieldset>
+									<legend>Сетка</legend>
+										<ul>
+											<li class="filter-grid">
+												<input type="radio" name="filter-grid" value="adaptive" id="filter-grid-adaptive" checked>
+													<label for="filter-grid-adaptive">Адаптивная</label></li>
+											<li class="filter-grid">
+												<input type="radio" name="filter-grid" value="fixed" id="filter-grid-fixed">
+													<label for="filter-grid-fixed">Фиксированная</label></li>
+											<li class="filter-grid">
+												<input type="radio" name="filter-grid" value="not-fixed" id="filter-grid-not-fixed">
+													<label for="filter-grid-not-fixed">Резиновая</label></li>
+										</ul>
+								</fieldset>
+								<fieldset>
+									<legend>Особенности</legend>
+										<ul>
+											<li class="filter-features">
+												<input type="checkbox" name="slider" id="filter-features-slider" checked>
+													<label for="filter-features-slider">Слайдер</label></li>
+											<li class="filter-features">
+												<input type="checkbox" name="benefits-block" id="filter-features-benefits-block">
+													<label for="filter-features-benefits-block">Блок преимуществ</label></li>
+											<li class="filter-features">
+												<input type="checkbox" name="news" id="filter-features-news">
+													<label for="filter-features-news">Новости</label></li>
+											<li class="filter-features">
+												<input type="checkbox" name="gallery" id="filter-features-gallery" checked>
+													<label for="filter-features-gallery">Галерея</label></li>
+											<li class="filter-features">
+												<input type="checkbox" name="basket" id="filter-features-basket">
+													<label for="filter-features-basket">Корзина</label></li>
+										</ul>
+								</fieldset>
+						</form>
+							<button class="show-results" type="submit">Показать</button>
 				</section>
 				<section class="sort-samples">
 					<h2 class="sort-samples">Сортировать</h2>
@@ -50,13 +83,40 @@
 							<li><a href="aplus.html"><img src="img/img-aplus.png" width="360" height="576" alt="aplus"></a></li>
 							<li><a href="kvast.html"><img src="img/img-kvast.png" width="360" height="576" alt="kvast"></a></li>
 						</ul>
-						<button class="page-1">1</button>
-						<button class="page-2">2</button>
-						<button class="page-3">3</button>
-						<button class="next">Следующая</button>
+								<button class="page-1">1</button>
+								<button class="page-2">2</button>
+								<button class="page-3">3</button>
+								<button class="next">Следующая</button>
 				</section>
 				<section class="map">
 					<h2 class="visually-hidden">Карта</h2>
+						<img src="img/map.jpg" width="1440" height="785" alt="map">
+							<section class="write-us">
+								<h2 class="studio-name">Nёrds design studio</h2>
+									<p>191186, Санкт-Петербург, <br>
+									ул. Б. Конюшенная, д.19/8,<br>
+									тел. +7 (812) 275-75-75	
+									</p>
+										<button type="button" name="write-us">Напишите нам</button>
+							</section>
+				</section>
+				<section class="write-us-up">
+					<h2>Напишите нам</h2>
+					<form  class="comment" action="" method="post">
+						<p class="comment-item">
+							<label for="comment-name">Ваше имя:</label>
+								<input type="text" name="name" id="comment-name" value="" placeholder="Имя Фамилия">
+						</p>
+						<p class="comment-e-mail">
+							<label for="item">Ваш e-mail</label> 
+								<input type="text" name="e-mail" id="comment-e-mail" value="" placeholder="email@example.com">
+						</p>	
+						<p class="comment-comment">
+							<label for="item">Текст письма</label>
+								<input type="text" name="comment" id="comment-comment" value="" placeholder="Текст письма">
+						</p>
+							<button type="submit" class="button">Отправить</button>	
+					</form>
 				</section>
 			</main>
 					<footer class="main-footer">
