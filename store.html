@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
   	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo" href="nerds.html"><img src="img/nerds-logo.png" alt="logo-nerds"></a>
@@ -18,16 +20,16 @@
 		</nav>
 	</header>
 			<main>
-				<h1>Магазин готовых шаблонов</h1>
+				<h2 class="inner-title">Магазин готовых шаблонов</h2>
 					<section class="filter">
-						<h2 class="visually-hidden">Фильтр</h2>
+						<h3 class="visually-hidden">Фильтр</h3>
 							<form class="filter" method="get" action="">
 								<fieldset>
-									<legend>Стоимость</legend>
+									<legend class="roller">Стоимость</legend>
 										<input type="range" name="filter-price" min="0" max="15 000">
 								</fieldset>
 								<fieldset>
-									<legend>Сетка</legend>
+									<legend class="grid">Сетка</legend>
 										<ul>
 											<li class="filter-grid">
 												<input type="radio" name="filter-grid" value="adaptive" id="filter-grid-adaptive" checked>
@@ -41,7 +43,7 @@
 										</ul>
 								</fieldset>
 								<fieldset>
-									<legend>Особенности</legend>
+									<legend class="features">Особенности</legend>
 										<ul>
 											<li class="filter-features">
 												<input type="checkbox" name="slider" id="filter-features-slider" checked>
@@ -61,10 +63,10 @@
 										</ul>
 								</fieldset>
 						</form>
-							<button class="show-results" type="submit">Показать</button>
-				</section>
+					<button class="results" type="submit">Показать</button>	
+					</section>
 				<section class="sort-samples">
-					<h2 class="sort-samples">Сортировать</h2>
+					<h3 class="sort-samples">Сортировать</h3>
 						<ul class="sort-samples">
 							<li><a href="">по цене</a></li>
 							<li><a href="">по типу</a></li>
@@ -74,17 +76,32 @@
 						</ul>
 				</section>
 				<section class="samples">
-					<h2 class="visually-hidden">Шаблоны</h2>
+					<h3 class="visually-hidden">Шаблоны</h3>
 						<ul class="samples">
 							<li><a href="sedona.html"><img src="img/img-sedona.png" width="360" height="576" alt="sedona"></a>
 								<h3>Sedona</h3>
 									<p>Информационный сайт для туристов</p>
 										<button type="button" name="sedona-price">9 990 руб.</button></li>
-							<li><a href="pink.html"><img src="img/img-pink.png" width="360" height="576" alt="pink"></a></li>
-							<li><a href="barbershop-borodinsky.html"><img src="img/img-barbershop.png" width="360" height="576" alt="barbershop"></a></li>
-							<li><a href="mishka.html"><img src="img/img-mishka.png" width="360" height="576" alt="mishka"></a></li>
-							<li><a href="aplus.html"><img src="img/img-aplus.png" width="360" height="576" alt="aplus"></a></li>
-							<li><a href="kvast.html"><img src="img/img-kvast.png" width="360" height="576" alt="kvast"></a></li>
+							<li><a href="pink.html"><img src="img/img-pink.png" width="360" height="576" alt="pink"></a>
+								<h3>Pink app</h3>
+									<p>Продуктовый лендинг приложения по iOS и Android</p>
+										<button type="button" name="pink-price">9 990 руб.</button></li>
+							<li><a href="barbershop-borodinski.html"><img src="img/img-barbershop.png" width="360" height="576" alt="barbershop"></a>
+								<h3>Barbershop</h3>
+									<p>Сайт салона красоты. Для мужчин, да.</p>
+										<button type="button" name="barbershop-price">9 990 руб.</button></li>
+							<li><a href="mishka.html"><img src="img/img-mishka.png" width="360" height="576" alt="mishka"></a>
+								<h3>Mishka</h3>
+									<p>Интернет-магазин вязанных игрушек</p>
+										<button type="button" name="mishka-price">9 990 руб.</button></li>
+							<li><a href="aplus.html"><img src="img/img-aplus.png" width="360" height="576" alt="aplus"></a>
+								<h3>Aplus</h3>
+									<p>Лендинг курсов повышения квалификации</p>
+										<button type="button" name="aplus-price">9 990 руб.</button></li>
+							<li><a href="kvast.html"><img src="img/img-kvast.png" width="360" height="576" alt="kvast"></a>
+								<h3>Кваст</h3>
+									<p>Промо-сайт производителя крафтового кваса</p>
+										<button type="button" name="kvast-price">9 990 руб.</button></li>
 						</ul>
 								<button class="page-1">1</button>
 								<button class="page-2">2</button>
@@ -92,10 +109,10 @@
 								<button class="next">Следующая</button>
 				</section>
 				<section class="map">
-					<h2 class="visually-hidden">Карта</h2>
-						<img src="img/map.jpg" width="1440" height="785" alt="map">
+					<h3 class="visually-hidden">Карта</h3>
+						<img src="img/map.jpg" width="1440" height="416" alt="map">
 							<section class="write-us">
-								<h2 class="studio-name">Nёrds design studio</h2>
+								<h3 class="studio-name">Nёrds design studio</h3>
 									<p>191186, Санкт-Петербург, <br>
 									ул. Б. Конюшенная, д.19/8,<br>
 									тел. +7 (812) 275-75-75	
@@ -103,8 +120,8 @@
 										<button type="button" name="write-us">Напишите нам</button>
 							</section>
 				</section>
-				<section class="write-us-up">
-					<h2>Напишите нам</h2>
+				<section class="write-us-form">
+					<h3>Напишите нам</h3>
 					<form  class="comment" action="" method="post">
 						<p class="comment-item">
 							<label for="comment-name">Ваше имя:</label>
@@ -124,7 +141,7 @@
 			</main>
 					<footer class="main-footer">
 						<div class="social-footer">
-							<b>Давайте дружить, это выгодно!</b>
+							<h3>Давайте дружить, это выгодно!</h3>
 								<a class="social-button-vk" href=" ">vkontake</a>
 								<a class="social-button-fb" href=" ">facebook</a>
 								<a class="social-button-inst" href=" ">instagram</a>	
