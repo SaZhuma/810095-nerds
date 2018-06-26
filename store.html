@@ -10,6 +10,7 @@
   <body class="inner-page">
   	<header class="main-header">
 		<nav class="main-navigation">
+			<div class="site-navigation">
 			<a class="main-header-logo" href="index.html"><img src="img/nerds-logo.png" alt="logo-nerds"></a>
 			<ul class="site-navigation">
 				<li><a href="studio.html">Студия</a></li>
@@ -18,19 +19,35 @@
 				<li><a href="contacts.html">Контакты</a></li>	
 				<li><a href="basket.html">Корзина</a></li>
 			</ul>
+		</div>
 		</nav>
 	</header>
 			<main>
-				<h1 class="inner-title">Магазин готовых шаблонов</h1>
+				<div class="inner-title">
+					<h1 class="inner-title">Магазин готовых шаблонов</h1>
+				</div>
+				<section class="sort-samples">
+					<h2 class="sort-samples">Сортировать</h2>
+						<ul class="sort-samples">
+							<li><a href="">по цене</a></li>
+							<li><a href="">по типу</a></li>
+							<li><a href="">по названию</a></li>
+							<li><a href="">Вниз</a></li>
+							<li><a href="">Вверх</a></li>
+						</ul>
+				</section>
 					<section class="filter">
 						<h2 class="visually-hidden">Фильтр цен, размеров страницы и особенностей</h2>
 							<form class="filter" method="get" action="#">
 								<fieldset>
-									<legend class="roller">Стоимость</legend>
+									<legend class="price">Стоимость</legend>
+										<div class="roller">
 										<input type="range" name="filter-price" min="0" max="15.000">
+										</div>
 								</fieldset>
 								<fieldset>
-									<legend class="grid">Сетка</legend>
+									<legend class="filter-grid">Сетка</legend>
+									<div class="grid">
 										<ul>
 											<li class="filter-grid">
 												<input type="radio" name="filter-grid" value="adaptive" id="filter-grid-adaptive" checked>
@@ -42,9 +59,11 @@
 												<input type="radio" name="filter-grid" value="not-fixed" id="filter-grid-not-fixed">
 													<label for="filter-grid-not-fixed">Резиновая</label></li>
 										</ul>
+									</div>
 								</fieldset>
 								<fieldset>
-									<legend class="features">Особенности</legend>
+									<legend class="filter-features">Особенности</legend>
+									<div class="features">
 										<ul>
 											<li class="filter-features">
 												<input type="checkbox" name="slider" id="filter-features-slider" checked>
@@ -62,53 +81,48 @@
 												<input type="checkbox" name="basket" id="filter-features-basket">
 													<label for="filter-features-basket">Корзина</label></li>
 										</ul>
+									</div>
 								</fieldset>
 						</form>
 					<button class="results" type="submit">Показать</button>	
 					</section>
-				<section class="sort-samples">
-					<h2 class="sort-samples">Сортировать</h2>
-						<ul class="sort-samples">
-							<li><a href="">по цене</a></li>
-							<li><a href="">по типу</a></li>
-							<li><a href="">по названию</a></li>
-							<li><a href="">Вниз</a></li>
-							<li><a href="">Вверх</a></li>
-						</ul>
-				</section>
-				<section class="samples">
+					<section class="samples-container">
 					<h2 class="visually-hidden">Шаблоны</h2>
+
 						<ul class="samples">
-							<li><a href="sedona.html"><img src="img/img-sedona.png" width="360" height="576" alt="sedona"></a>
+								<li><a href="sedona.html"><img src="img/img-sedona.png" width="360" height="576" alt="sedona"></a>
 								<h3>Sedona</h3>
 									<p>Информационный сайт для туристов</p>
 										<button type="button" name="sedona-price">9 990 руб.</button></li>
-							<li><a href="pink.html"><img src="img/img-pink.png" width="360" height="576" alt="pink"></a>
-								<h3>Pink app</h3>
-									<p>Продуктовый лендинг приложения по iOS и Android</p>
-										<button type="button" name="pink-price">9 990 руб.</button></li>
-							<li><a href="barbershop-borodinski.html"><img src="img/img-barbershop.png" width="360" height="576" alt="barbershop"></a>
+								<li><a href="pink.html"><img src="img/img-pink.png" width="360" height="576" alt="pink"></a>
+									<h3>Pink app</h3>
+										<p>Продуктовый лендинг приложения по iOS и Android</p>
+											<button type="button" name="pink-price">9 990 руб.</button></li>
+								<li><a href="barbershop-borodinski.html"><img src="img/img-barbershop.png" width="360" height="576" alt="barbershop"></a>
 								<h4>Barbershop</h4>
 									<p>Сайт салона красоты. Для мужчин, да.</p>
 										<button type="button" name="barbershop-price">9 990 руб.</button></li>
-							<li><a href="mishka.html"><img src="img/img-mishka.png" width="360" height="576" alt="mishka"></a>
-								<h3>Mishka</h3>
-									<p>Интернет-магазин вязанных игрушек</p>
-										<button type="button" name="mishka-price">9 990 руб.</button></li>
-							<li><a href="aplus.html"><img src="img/img-aplus.png" width="360" height="576" alt="aplus"></a>
-								<h3>Aplus</h3>
-									<p>Лендинг курсов повышения квалификации</p>
-										<button type="button" name="aplus-price">9 990 руб.</button></li>
-							<li><a href="kvast.html"><img src="img/img-kvast.png" width="360" height="576" alt="kvast"></a>
-								<h3>Кваст</h3>
-									<p>Промо-сайт производителя крафтового кваса</p>
-										<button type="button" name="kvast-price">9 990 руб.</button></li>
+								<li><a href="mishka.html"><img src="img/img-mishka.png" width="360" height="576" alt="mishka"></a>
+									<h3>Mishka</h3>
+										<p>Интернет-магазин вязанных игрушек</p>
+											<button type="button" name="mishka-price">9 990 руб.</button></li>
+								<li><a href="aplus.html"><img src="img/img-aplus.png" width="360" height="576" alt="aplus"></a>
+									<h3>Aplus</h3>
+										<p>Лендинг курсов повышения квалификации</p>
+											<button type="button" name="aplus-price">9 990 руб.</button></li>
+								<li><a href="kvast.html"><img src="img/img-kvast.png" width="360" height="576" alt="kvast"></a>
+									<h3>Кваст</h3>
+										<p>Промо-сайт производителя крафтового кваса</p>
+											<button type="button" name="kvast-price">9 990 руб.</button></li>
 						</ul>
+							<div class="pages">
 								<button class="page-1">1</button>
 								<button class="page-2">2</button>
 								<button class="page-3">3</button>
 								<button class="next">Следующая</button>
+							</div>
 				</section>
+			</div>
 				<section class="map">
 					<h2 class="visually-hidden">Как нас найти, карта</h2>
 						<img src="img/map.jpg" width="1440" height="416" alt="map">
@@ -141,13 +155,16 @@
 				</section>
 			</main>
 					<footer class="main-footer">
-						<div class="social-footer">
-							<h2>Давайте дружить, это выгодно!</h2>
-								<a class="social-button-vk" href=" ">vkontake</a>
-								<a class="social-button-fb" href=" ">facebook</a>
-								<a class="social-button-inst" href=" ">instagram</a>	
-									<p>Скидка 10% для друзей из социальных сетей.</p>
-						</div>
-						</footer>
+					<div class="social-footer">
+						<h2>Давайте дружить, это выгодно!</h2>
+						<p>Скидка 10% для друзей из социальных сетей.</p>
+							<div class="social-button">
+							<a class="social-button-vk" href="">vkontake</a>
+							<a class="social-button-fb" href="">facebook</a>
+							<a class="social-button-inst" href="">instagram</a>
+							</div>	
+					
+					</div>
+				</footer>
   </body>
 </html>
