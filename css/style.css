@@ -449,13 +449,20 @@ section.write-us-form{
 	margin:0 auto;
 	padding-left:100px;
 	padding-right: 100px;
-	overflow:hidden;
-	position: fixed;
+	padding-top:75px;
+	padding-bottom:80px;
 }
 
 .write-us-form h2{
 	font-size:45px;
 	line-height:45px;
+}
+
+form.write-us-form{
+	width:
+	margin:0 auto;
+	overflow:hidden;
+	position: fixed;
 }
 
 .write-us-form input{
