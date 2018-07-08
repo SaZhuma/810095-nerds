@@ -69,7 +69,7 @@
 					<div class="features">
 						<ul>
 							<li class="filter-features">
-								<input type="checkbox" name="slider" id="filter-features-slider" checked>
+								<input class="visually-hidden filter-input filter-input-checkbox"type="checkbox" name="slider" id="filter-features-slider" checked>
 								<label for="filter-features-slider">Слайдер</label></li>
 								<li class="filter-features">
 								<input type="checkbox" name="benefits-block" id="filter-features-benefits-block">
@@ -89,52 +89,54 @@
 			</form>
 			<button class="results" type="submit">Показать</button>	
 		</section>
-	<div class="samples-container">
-		<ul class="sort-samples">
-			<li class="sort-samples">Сортировать:</li>
-			<li class="sort-type"><a href="">по цене</a></li>
-			<li class="sort-type"><a href="">по типу</a></li>
-			<li class="sort-type"><a href="">по названию</a></li>
-			<!--<li><a href="">Вниз</a></li>
+		<div class="samples-container">
+			<ul class="sort-samples">
+				<li class="sort-samples">Сортировать:</li>
+				<li class="sort-type"><a href="">по цене</a></li>
+				<li class="sort-type"><a href="">по типу</a></li>
+				<li class="sort-type"><a href="">по названию</a></li>
+				<!--<li><a href="">Вниз</a></li>
 			<li><a href="">Вверх</a></li>-->
-		</ul>
-		<h2 class="visually-hidden">Шаблоны</h2>
-			<ul class="samples">
-				<li><a href="sedona.html"><img src="img/img-sedona.png" width="360" height="576" alt="sedona"></a></li>
+			</ul>
+			<h2 class="visually-hidden">Шаблоны</h2>
+				<ul class="samples">
+					<li><a href="sedona.html"><img src="img/img-sedona.png" width="360" height="576" alt="sedona"></a></li>
 					<!--<div class="overlay">
 					<h3>Sedona</h3>
 					<p>Информационный сайт для туристов</p>
 					<button type="button" name="sedona-price">9 990 руб.</button>
 					</div> -->
-				<li><a href="pink.html"><img src="img/img-pink.png" width="360" height="576" alt="pink"></a></li>
-					<!--<h3>Pink app</h3>
-					<p>Продуктовый лендинг приложения по iOS и Android</p>
-					<button type="button" name="pink-price">9 990 руб.</button></li>-->
-				<li><a href="barbershop-borodinski.html"><img src="img/img-barbershop.png" width="360" height="576" alt="barbershop"></a></li>
-					<!--<h4>Barbershop</h4>
-					<p>Сайт салона красоты. Для мужчин, да.</p>
-					<button type="button" name="barbershop-price">9 990 руб.</button>-->
-				<li><a href="mishka.html"><img src="img/img-mishka.png" width="360" height="576" alt="mishka"></a></li>
-					<!--<h3>Mishka</h3>
-					<p>Интернет-магазин вязанных игрушек</p>
-					<button type="button" name="mishka-price">9 990 руб.</button>-->
-				<li><a href="aplus.html"><img src="img/img-aplus.png" width="360" height="576" alt="aplus"></a></li>
-					<!--<h3>Aplus</h3>
-					<p>Лендинг курсов повышения квалификации</p>
-					<button type="button" name="aplus-price">9 990 руб.</button>-->
-				<li><a href="kvast.html"><img src="img/img-kvast.png" width="360" height="576" alt="kvast"></a></li>
-					<!--<h3>Кваст</h3>
-					<p>Промо-сайт производителя крафтового кваса</p>
-					<button type="button" name="kvast-price">9 990 руб.</button>-->
-			</ul>
-		<div class="pages">
-			<button class="page-1">1</button>
-			<button class="page-2">2</button>
-			<button class="page-3">3</button>
-			<button class="next">Следующая</button>
+					<li><a href="pink.html"><img src="img/img-pink.png" width="360" height="576" alt="pink"></a></li>
+					<li><a href="barbershop-borodinski.html"><img src="img/img-barbershop.png" width="360" height="576" alt="barbershop"></a></li>
+					<li><a href="mishka.html"><img src="img/img-mishka.png" width="360" height="576" alt="mishka"></a></li>
+					<li><a href="aplus.html"><img src="img/img-aplus.png" width="360" height="576" alt="aplus"></a></li>
+					<li><a href="kvast.html"><img src="img/img-kvast.png" width="360" height="576" alt="kvast"></a></li>
+				</ul>
+			<div class="pages">
+				<button class="page-1">1</button>
+				<button class="page-2">2</button>
+				<button class="page-3">3</button>
+				<button class="next">Следующая</button>
+			</div>
 		</div>
 	</div>
-</div>			
+	<section class="write-us-form">
+		<h2>Напишите нам</h2>
+		<form  class="comment" action="#" method="post">
+			<div class="comment-user">	
+				<p class="comment-item">
+					<label for="comment-name">Ваше имя:</label>
+					<input type="text" name="name" id="comment-name" value="" placeholder="Имя Фамилия"></p>
+				<p class="comment-e-mail">
+					<label for="comment-e-mail">Ваш e-mail:</label> 
+					<input type="text" name="e-mail" id="comment-e-mail" value="" placeholder="email@example.com"></p>
+			</div>	
+			<p class="comment-text">
+				<label for="comment-comment">Текст письма:</label>
+				<textarea name="comment" placeholder="В свободной форме"></textarea></p>
+			<button type="submit" class="write-us-button">Отправить</button>	
+		</form>
+	</section>			
 	<div class="map">
 		<h2 class="visually-hidden">Как нас найти, карта</h2>
 		<section class="write-us">
@@ -144,24 +146,6 @@
 			<p>тел. +7 (812) 275-75-75</p>
 			<button type="button" name="write-us">Напишите нам</button>
 		</section>
-		<!--<section class="write-us-form">
-			<h2>Напишите нам</h2>
-			<form  class="comment" action="#" method="post">
-			<p class="comment-item">
-				<label for="comment-name">Ваше имя:</label>
-				<input type="text" name="name" id="comment-name" value="" placeholder="Имя Фамилия">
-			</p>
-				<p class="comment-e-mail">
-					<label for="comment-e-mail">Ваш e-mail</label> 
-					<input type="text" name="e-mail" id="comment-e-mail" value="" placeholder="email@example.com">
-				</p>	
-					<p class="comment-comment">
-						<label for="comment-comment">Текст письма</label>
-						<input type="text" name="comment" id="comment-comment" value="" placeholder="Текст письма">
-					</p>
-						<button type="submit" class="button">Отправить</button>	
-			</form>
-		</section>-->
 </main>
 	<footer class="main-footer">
 		<div class="social-button">
